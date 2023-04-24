@@ -52,26 +52,22 @@ const {
 
 ///////////////////////////////////////////////////
 
-
 const student = { math: 5, biology: 3, language: 2, isOboltus: true };
 for (let number in student) {
-  if (typeof student[number] === 'number') {
+  if (typeof student[number] === "number") {
     student[number] *= 2;
   }
-  
-};
+}
 // 2.2 Напишите программу, которая посчитает среднее арифметическое всех оценок студента. Если средняя оценка (после умножения) будет больше 5, то поле isOboltus должно стать false.
-let sum =0;
-let result =0;
-for(let number2 in student){
-    if (typeof student[number2]==='number'){
-        sum+=student[number2];
-        result++;
-    }else if(sum/result>5){
-        student[number2]=Boolean(false);
-    }
+let sum = 0;
+let result = 0;
+for (let number2 in student) {
+  if (typeof student[number2] === "number") {
+    sum += student[number2];
+    result++;
+  } else if (sum / result > 5) {
+    student[number2] = Boolean(false);
+  }
 }
 
-
 console.log(student);
-
