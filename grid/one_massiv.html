@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+            const  employees = [
+        {
+          id: 1,
+          name: 'Jack',
+          age: 45,
+          salaries: [120000, 130000, 110000, 140000, 150000]
+        }, {
+          id: 2,
+          name: 'Bob',
+          age: 40,
+          salaries: [170000, 130000, 190000, 140000, 160000]
+        }, {
+          id: 3,
+          age: 38,
+          name: 'Tom',
+          salaries: [200000, 230000, 210000, 240000, 250000]
+      }];
+      
+      employees.sort(function(a,b){
+          return a.age - b.age
+      });
+   const ageMax=employees.filter(function(person){
+    return person.age >= 40
+  });
+  const avgSalarie =
+
+    console.log(employees);
+      console.log(ageMax);
+    </script>
+  </body>
+</html>
